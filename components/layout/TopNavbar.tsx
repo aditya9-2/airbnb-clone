@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { AirbnbLogo } from "./AirbnbLogo";
-import { House, Search } from "lucide-react";
-import Image from "next/image";
+import { AirbnbLogo } from "../icons/AirbnbLogo";
 import { SearchPill } from "./SearchPill";
 
 export function TopNavbar() {
@@ -24,7 +22,7 @@ export function TopNavbar() {
                 <div className="flex items-center gap-2">
                     <Link
                         href="#"
-                        className="hidden rounded-full px-3 py-2 text-sm font-medium hover:bg-neutral-100 md:block"
+                        className="hidden rounded-full px-3 py-2 text-sm font-semibold hover:bg-neutral-100 md:block"
                     >
                         Become a host
                     </Link>
