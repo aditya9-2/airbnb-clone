@@ -6,7 +6,7 @@ import { SearchPill } from "./SearchPill";
 
 export function TopNavbar() {
     return (
-        <header className="sticky h-22 top-0 z-40 w-full border-b border-neutral-200 bg-white">
+        <header className="relative h-22 w-full border-b border-neutral-200 bg-white">
             <nav className="mx-auto flex h-22 max-w-[1750px] items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-rausch" aria-label="Airbnb homepage">
