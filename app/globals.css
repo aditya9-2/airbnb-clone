@@ -8,7 +8,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -46,6 +46,13 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Airbnb brand tokens */
+  --color-rausch: var(--rausch);
+  --color-rausch-hover: var(--rausch-hover);
+  --color-hof: var(--hof);
+  --color-foggy: var(--foggy);
+  --color-hof-border: var(--hof-border);
 }
 
 :root {
@@ -81,6 +88,18 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Airbnb brand tokens */
+  --rausch: #ff385c;
+  /* primary CTA / brand pink */
+  --rausch-hover: #d70466;
+  /* verify hover shade against reference DevTools */
+  --hof: #222222;
+  /* primary text */
+  --foggy: #717171;
+  /* secondary text */
+  --hof-border: #dddddd;
+  /* card/section dividers */
 }
 
 .dark {
@@ -121,9 +140,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
