@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AmenityRow } from "./AmenityRow";
 import { AmenitiesModal } from "./AmenitiesModal";
 import { PREVIEW_AMENITIES, AMENITY_CATEGORIES } from "@/lib/data/amenities";
+import { OutlineButton } from "../ui/OutlineButton";
 
 export function AmenitiesSection() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -20,13 +21,7 @@ export function AmenitiesSection() {
                 ))}
             </div>
 
-            <button
-                type="button"
-                onClick={() => setModalOpen(true)}
-                className="mt-6 cursor-pointer rounded-lg border border-neutral-900 px-6 py-3 text-sm font-semibold hover:bg-neutral-50"
-            >
-                Show all 50 amenities
-            </button>
+            <OutlineButton label="Show all 50 amenities" onClick={() => setModalOpen(true)} />
 
             <AmenitiesModal
                 open={modalOpen}

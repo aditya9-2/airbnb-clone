@@ -15,6 +15,7 @@ import { useToast } from "@/hooks/useToast";
 import type { Listing } from "@/types/listing";
 import { AmenitiesSection } from "./AmenitiesSection";
 import { StaticBookingCalendar } from "./StaticBookingCalendar";
+import { ReviewsSection } from "./reviews/ReviewsSection";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -173,6 +174,8 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
                         </div>
                     </div>
                 </div>
+                {/* Reviews Component */}
+                <ReviewsSection rating={listing.rating} reviewCount={listing.reviewCount} />
             </div>
 
             {ToastComponent}
