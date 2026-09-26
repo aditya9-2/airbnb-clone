@@ -38,4 +38,6 @@ export type Listing = {
     images: ListingImage[];
     highlights: Highlight[];
     description: string;
+    fullLocation: string;
+    neighbourhoodHighlights: string;
 };

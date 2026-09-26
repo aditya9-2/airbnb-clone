@@ -16,6 +16,7 @@ import type { Listing } from "@/types/listing";
 import { AmenitiesSection } from "./AmenitiesSection";
 import { StaticBookingCalendar } from "./StaticBookingCalendar";
 import { ReviewsSection } from "./reviews/ReviewsSection";
+import { LocationSection } from "./LocationSection";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -176,6 +177,13 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
                 </div>
                 {/* Reviews Component */}
                 <ReviewsSection rating={listing.rating} reviewCount={listing.reviewCount} />
+
+                {/* Location Component */}
+                <LocationSection
+                    fullLocation={listing.fullLocation}
+                    neighbourhoodHighlights={listing.neighbourhoodHighlights}
+                />
+
             </div>
 
             {ToastComponent}
