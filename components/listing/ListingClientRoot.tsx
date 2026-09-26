@@ -13,6 +13,7 @@ import { ListingDescription } from "@/components/listing/ListingDescription";
 import { WhereYouWillSleep } from "@/components/icons/WhereYouWillSleep";
 import { useToast } from "@/hooks/useToast";
 import type { Listing } from "@/types/listing";
+import { AmenitiesSection } from "./AmenitiesSection";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -145,6 +146,11 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
                         {/* Rooms Component */}
                         <div className="border-b border-neutral-200">
                             <WhereYouWillSleep />
+                        </div>
+
+                        {/* Amenities Component */}
+                        <div className="border-b border-neutral-200">
+                            <AmenitiesSection />
                         </div>
                     </div>
 
