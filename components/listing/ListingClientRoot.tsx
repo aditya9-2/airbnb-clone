@@ -17,6 +17,8 @@ import { AmenitiesSection } from "./AmenitiesSection";
 import { StaticBookingCalendar } from "./StaticBookingCalendar";
 import { ReviewsSection } from "./reviews/ReviewsSection";
 import { LocationSection } from "./LocationSection";
+import { MeetYourHostSection } from "./host/MeetYourHostSection";
+import { ThingsToKnowSection } from "./host/ThingsToKnowSection";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -183,6 +185,12 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
                     fullLocation={listing.fullLocation}
                     neighbourhoodHighlights={listing.neighbourhoodHighlights}
                 />
+
+                {/* Meet Your Host Component */}
+                <MeetYourHostSection host={listing.host} coHosts={listing.coHosts} />
+
+                {/* Things to Know Component */}
+                <ThingsToKnowSection thingsToKnow={listing.thingsToKnow} />
 
             </div>
 

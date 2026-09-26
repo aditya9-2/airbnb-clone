@@ -8,6 +8,26 @@ export type Host = {
     name: string;
     avatarUrl: string;
     yearsHosting: number;
+    reviewCount?: number;
+    rating?: number;
+    bornDecade?: string;
+    school?: string;
+    responseRate?: number;
+    respondsWithin?: string;
+    verified?: boolean;
+};
+
+export type CoHost = {
+    id: string;
+    name: string;
+    avatarUrl: string | null;
+    fallbackColor?: string;
+};
+
+export type ThingsToKnow = {
+    cancellationPolicy: string[];
+    houseRules: string[];
+    safetyProperty: string[];
 };
 
 export type Highlight = {
@@ -20,6 +40,7 @@ export type Listing = {
     id: string;
     title: string;
     propertyType: string; // "Entire serviced apartment in Candolim, India"
+    city: string,
     guests: number;
     bedrooms: number;
     beds: number;
@@ -40,4 +61,6 @@ export type Listing = {
     description: string;
     fullLocation: string;
     neighbourhoodHighlights: string;
+    coHosts: CoHost[];
+    thingsToKnow: ThingsToKnow;
 };

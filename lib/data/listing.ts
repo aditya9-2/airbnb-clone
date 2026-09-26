@@ -4,6 +4,7 @@ export const listing: Listing = {
     id: "mirashya-ug10",
     title: "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
     propertyType: "Entire serviced apartment in Candolim, India",
+    city: "Candolim",
     guests: 3,
     bedrooms: 1,
     beds: 1,
@@ -18,11 +19,6 @@ export const listing: Listing = {
     checkOut: "2026-10-23",
     guestsSelected: 2,
     freeCancellationDate: "2026-10-17",
-    host: {
-        name: "Mirashya Homes",
-        avatarUrl: "/images/host-avatar.jpg",
-        yearsHosting: 2,
-    },
     images: [
         { id: "img-1", url: "/images/prop-10.jpeg", alt: "Living room 1" },
         { id: "img-2", url: "/images/prop-3.jpeg", alt: "Living room 2" },
@@ -47,8 +43,46 @@ export const listing: Listing = {
             description: "You can check in with the building staff.",
         },
     ],
-    description: "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨ Stay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors. Just minutes from Candolim Beach 🏖️, popular cafés, restaurants, and nightlife 🍹, it’s ideal for couples seeking romance, relaxation, and a touch of luxury in North Goa. ❤️🌴",
+    description: "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨ Stay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors. Just minutes from Candolim Beach 🏖️, popular cafés, restaurants, and nightlife 🍹, it's ideal for couples seeking romance, relaxation, and a touch of luxury in North Goa. ❤️🌴",
     fullLocation: "Candolim, Goa, India",
     neighbourhoodHighlights:
         "Located in the heart of Candolim, Amor de Goa offers a peaceful stay with easy access to beaches, cafés, and popular attractions.",
+    host: {
+        name: "Mirashya Homes",
+        avatarUrl: "/host.jpeg",
+        yearsHosting: 2,
+        reviewCount: 1463,
+        rating: 4.68,
+        bornDecade: "80s",
+        school: "NICMAR GOA",
+        responseRate: 100,
+        respondsWithin: "an hour",
+        verified: true,
+    },
+    coHosts: [
+        { id: "sharath", name: "Sharath", avatarUrl: "/images/co1.jpg" },
+        { id: "aman", name: "Aman Dev Pahwa", avatarUrl: "/images/co2.jpg" },
+        { id: "maria", name: "Maria Karen Priyanka", avatarUrl: "/images/co3.jpg" },
+        { id: "simran", name: "Simran", avatarUrl: "/images/rev5.jpeg" },
+        { id: "pallavi", name: "Pallavi", avatarUrl: "/images/pal.jpeg" },
+        { id: "sanyukta", name: "Sanyukta", avatarUrl: "/images/joo.jpeg" },
+        { id: "shruti", name: "Shruti", avatarUrl: null, fallbackColor: "bg-pink-100" },
+        { id: "amisha", name: "Amisha", avatarUrl: null, fallbackColor: "bg-indigo-100" },
+    ],
+    thingsToKnow: {
+        cancellationPolicy: [
+            "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+            "Review this host's full policy for details.",
+        ],
+        houseRules: [
+            "Check-in after 2:00 pm",
+            "Checkout before 11:00 am",
+            "3 guests maximum",
+        ],
+        safetyProperty: [
+            "Carbon monoxide alarm not reported",
+            "Smoke alarm not reported",
+            "Exterior security cameras on property",
+        ],
+    },
 };
