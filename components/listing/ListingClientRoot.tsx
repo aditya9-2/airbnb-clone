@@ -19,6 +19,7 @@ import { ReviewsSection } from "./reviews/ReviewsSection";
 import { LocationSection } from "./LocationSection";
 import { MeetYourHostSection } from "./host/MeetYourHostSection";
 import { ThingsToKnowSection } from "./host/ThingsToKnowSection";
+import { NearbyStaysCarousel } from "./NearbyStaysCarousel";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -191,6 +192,9 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
 
                 {/* Things to Know Component */}
                 <ThingsToKnowSection thingsToKnow={listing.thingsToKnow} />
+
+                {/* Nearby Stays Component */}
+                <NearbyStaysCarousel />
 
             </div>
 
