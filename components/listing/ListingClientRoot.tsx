@@ -14,6 +14,8 @@ import { WhereYouWillSleep } from "@/components/icons/WhereYouWillSleep";
 import { useToast } from "@/hooks/useToast";
 import type { Listing } from "@/types/listing";
 import { AmenitiesSection } from "./AmenitiesSection";
+import { BookingCalendarSection } from "./BookingCalendarSection";
+import { StaticBookingCalendar } from "./StaticBookingCalendar";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
     const [isSaved, setIsSaved] = useState(false);
@@ -152,6 +154,9 @@ export function ListingClientRoot({ listing }: { listing: Listing }) {
                         <div className="border-b border-neutral-200">
                             <AmenitiesSection />
                         </div>
+
+                        {/* Calendar component */}
+                        <StaticBookingCalendar />
                     </div>
 
                     {/* Right Column (Promo + Booking Card) */}
