@@ -14,7 +14,6 @@ import { WhereYouWillSleep } from "@/components/icons/WhereYouWillSleep";
 import { useToast } from "@/hooks/useToast";
 import type { Listing } from "@/types/listing";
 import { AmenitiesSection } from "./AmenitiesSection";
-import { BookingCalendarSection } from "./BookingCalendarSection";
 import { StaticBookingCalendar } from "./StaticBookingCalendar";
 
 export function ListingClientRoot({ listing }: { listing: Listing }) {
